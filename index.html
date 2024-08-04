@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <img src="your-logo.png" alt="Pterodactyl Hosting">
+            <span>Pterodactyl Hosting</span>
+        </div>
+        <button class="cart-button" onclick="redirectToSeller()">Cart</button>
+    </div>
+    <div class="landing-page">
+        <h1>Pterodactyl Hosting</h1>
+        <p>Tempat Untuk Membeli Hosting<br>Minecraft Aman</p>
+    </div>
+    <div class="content">
+        <div class="hosting-menu">
+            <h2>Hosting</h2>
+            <div class="hosting-details">
+                <p>RAM: 1GB, CPU: 100%, Disk: 25GB, Harga: 4k</p>
+                <p>RAM: 2GB, CPU: 150%, Disk: 30GB, Harga: 8k</p>
+                  <p>RAM: 3GB, CPU: 200%, Disk: 35GB, Harga: 12k</p>
+                  <p>RAM: 4GB, CPU: 250%, Disk: 40GB, Harga: 16k</p>
+                  <p>RAM: 5GB, CPU: 250%, Disk: 50GB, Harga: 20k</p>
+                <!-- Add more details as needed -->
+            </div>
+            <button onclick="openOrderForm()">Order</button>
+        </div>
+    </div>
+        <div class="via">
+        <div class="pembayaran">
+            <h3>Pembayaran</h3>
+            <div class="hosting-details">
+              <p>Dana<br>Gopay<br>Qris</p>
+              <h4>Keuntungan Hosting</h4>
+                  <p>- Garansi Full<br>- No Ddos<br>- No Sebar Link<br>- No Jual Lagi Ke Orang Lain</p>
+                
+                <!-- Add more details as needed -->
+            </div>
+    <div class="order-form" id="orderForm">
+        <div class="order-form-content">
+            <span class="close-btn" onclick="closeOrderForm()">&times;</span>
+            <form id="orderFormContent" onsubmit="submitOrderForm(event)">
+              <h3>Pembelian Hosting</h3>
+              <p>Di Isi Dengan Benar Agar Tidak Terjadi Kesalahan.</p>
+                <label for="ram">RAM:</label>
+                <input type="text" id="ram" name="ram" required>
+                <label for="payment">Via Pembayaran:</label>
+                <input type="text" id="payment" name="payment" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>@Pterodactyl | Hosting</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
